@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 
 namespace AuditChecklistModule
 {
-    public class Program
+    public class Program 
     {
         public static void Main(string[] args)
         {
@@ -35,7 +35,7 @@ namespace AuditChecklistModule
 
              {
 
-                 logging.AddLog4Net();
+                 logging.AddLog4Net(); //log
 
                  logging.SetMinimumLevel(LogLevel.Error);
 
