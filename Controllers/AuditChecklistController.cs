@@ -33,7 +33,7 @@ namespace AuditChecklistModule.Controllers
             if (string.IsNullOrEmpty(auditType))
                 return BadRequest("No Input");
 
-            if (!auditType.Contains("Internal") && !auditType.Contains("SOX"))
+            if ((auditType !="Internal") && (auditType !="SOX"))
                 return Ok("Wrong Input");
 
             try
